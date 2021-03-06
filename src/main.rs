@@ -48,10 +48,6 @@ fn main3(){
 fn main4(x: i32) -> i32 { //Return Parameter as per data type
     return x;
 }
-use hello::called_by_main_rs; //initialized or imported from libs.rs
 
-fn module_function(){
-    called_by_main_rs(10); //calling function from libs.rs
-}
 
 
