@@ -32,5 +32,21 @@ fn main2(missiles: i32) {   //Second Function
     let ready = READY_AMOUNT;
 
     println!("Firing {} of my Ready {} missiles !!!",missiles,ready);
+    main3()
+    }
+
+fn main3(){
+    let x= 5;
+    let y = { 
+        let x =13;
+        x+1
+    };
+    println!("Value of y = {}", y);
+    let f_return = main4(4);
+    println!("Returned Value = {}",f_return); //Return value function
 }
+fn main4(x: i32) -> i32 { //Return Parameter as per data type
+    return x;
+}
+
 
