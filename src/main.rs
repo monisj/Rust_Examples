@@ -74,9 +74,30 @@ fn if_else_statement(){
     else{
         println!("Value i got is {}",variable1+variable2);
     }
-
-    
-    
+    for_loops()
 }
+
+fn for_loops(){
+    for num in 0..50 { //Similar to for i in range(0,50) add (0..=50) for 0 to 50 range
+        println!("{}=Value",num);
+    }
+    //`bob: loop{           //identifier with ` sign
+       // println!("First Loop");       //Just as an example on how uncoditional loop works
+        //loop{
+            //println!("Second Loop");
+            //loop{
+                //break `bob;
+           // }
+       // }
+   // }
+
+   //while dizzy(){
+       //println!("Value ={}",a);       //Just as an example on how while loops work on rust
+      // a=a+1;
+  // }                                  //Will break out once the condition is false same as other languages
+}
+    
+    
+
 
 
