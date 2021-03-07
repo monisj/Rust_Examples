@@ -21,6 +21,7 @@ fn main(){ //Driver Code function
     println!("Remaining = {}",missiles);   
     main2(missiles)
     
+    
 }
 const STARTING_MISSILES: i32 =8;
 const READY_AMOUNT: i32 = 2;
@@ -58,7 +59,24 @@ fn array(){
     println!("{}",list[0]); // Single array valye
     println!("{}",list2[1]); // Print same value 
     println!("{0:?}",list3); // Print entire array
+    if_else_statement()
 }
 
+fn if_else_statement(){
+    let variable1: i32 = 32;
+    let variable2: i32 = 32;
+    if variable1+variable2 == 64 {
+        println!("Congrats you got 64!!!");
+    }                                           //If Else Statement
+    else if variable1+variable2 != 64 {
+        //println!("I do not know what i got");
+    }
+    else{
+        println!("Value i got is {}",variable1+variable2);
+    }
+
+    
+    
+}
 
 
