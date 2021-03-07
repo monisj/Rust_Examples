@@ -44,9 +44,20 @@ fn main3(){
     println!("Value of y = {}", y);
     let f_return = main4(4);
     println!("Returned Value = {}",f_return); //Return value function
+    array()
 }
 fn main4(x: i32) -> i32 { //Return Parameter as per data type
     return x;
+    
+}
+
+fn array(){
+    let list= [1,2,3];
+    let list2 = [0; 3];
+    let list3: [u8; 3] = [1,2,3]; //Array are size limited to 32
+    println!("{}",list[0]); // Single array valye
+    println!("{}",list2[1]); // Print same value 
+    println!("{0:?}",list3); // Print entire array
 }
 
 
