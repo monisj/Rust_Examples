@@ -81,6 +81,7 @@ fn for_loops(){
     for num in 0..50 { //Similar to for i in range(0,50) add (0..=50) for 0 to 50 range
         println!("{}=Value",num);
     }
+    clone_strings()
     //`bob: loop{           //identifier with ` sign
        // println!("First Loop");       //Just as an example on how uncoditional loop works
         //loop{
@@ -96,7 +97,19 @@ fn for_loops(){
       // a=a+1;
   // }                                  //Will break out once the condition is false same as other languages
 }
-    
+fn clone_strings(){ //Ownership of variables Function as moving of variable data
+    let text1 = String::from("Hello");
+    //let text2 = text1;  //Creates an error because of the stack heap assignment rust uses it eliminates the Previous Assignment
+    let text2 = text1.clone();
+    println!("{} = text1",text1);           
+    println!("{} = text2",text2);
+    do_stuff(&text2);               //String Function
+    println!("{} = text1",text2);
+}
+
+fn do_stuff(text3: &String){
+    println!("{}",text3);           //Function as to print text as string from above
+}
     
 
 
