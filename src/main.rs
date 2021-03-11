@@ -1,4 +1,11 @@
-
+#![allow(
+    dead_code,
+    unused_variables,
+    unused_parens,
+    unused_imports,
+    unused_mut,
+    unused_must_use
+)]
 fn main(){ //Driver Code function 
     //let a =12; // without let mut a=12 the variables are immutable 
     //let b =14;
