@@ -115,7 +115,27 @@ fn clone_strings(){ //Ownership of variables Function as moving of variable data
 }
 
 fn do_stuff(text3: &String){
-    println!("{}",text3);           //Function as to print text as string from above
+    println!("{}",text3);       //Function as to print text as string from above
+    let mut v: Vec<i32> = Vec::new();           //Vector usefull for creating lists Also it works as a stack with Push and Pop commands
+    v.push(1);
+    v.push(2); //Push Function      <> ingle brackets 
+    v.push(3);
+    v.push(4);
+    let x =v.pop(); // Value = 4
+    v.pop();   //Pop Function
+    println!("{:?} =",v);
+    println!("{:?} =",x); //Value = 4
+    println!("{}",v[1]); //In This case we get a string value 
+
+
+    let mut vect = Vec![1,2,3,4]; //Another way to initilize Vector
+    println("{} = Value 1",vect[1]);
+
+    let mut h: HashMap<u8,bool> = HashMap::new();    //Create a HashMap sort of a Dictonary with key
+    h.insert(1,false); //Inserting Values
+    h.insert(2,true);
+    let have= h.remove(&2).unwrap(); //to Get and remove value from dictonay
+    
 }
     
 
